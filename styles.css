@@ -1,0 +1,135 @@
+body {
+    background-image: url(def.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 23px;
+    text-shadow: 1px 1.5px 1px rgb(77, 77, 77);
+    height: 35em;
+}
+
+#searchContainer {
+    width: 26%;
+    margin: 0 auto;
+}
+
+#searchInput {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.048);
+    border-radius: 24px;
+    font: normal 15px / normal Verdana, Geneva, sans-serif;
+    background: rgba(255, 255, 255, 0.479);
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 59px;
+    outline: none;
+    color: rgb(41, 34, 136);
+}
+
+#searchBtn {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid rgba(0, 12, 243, 0.1);
+    border-radius: 24px;
+    font: normal 15px / normal Verdana, Geneva, sans-serif;
+    background: rgba(0, 12, 243, 0.39);
+    width: 20%;
+    margin-top: 50px;
+    margin-bottom: 59px;
+    outline: none;
+    color: white;
+}
+
+#weatherContainer {
+    background-color: rgba(0, 0, 0, 0.486);
+    border-radius: 73px;
+    width: 34%;
+    box-shadow: 1px 1px 5px black;
+    padding: 50px;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+#weatherMain {
+    display: block;
+    padding-left: 121px;
+}
+
+#weatherMain div {
+    display: inline-block;
+}
+
+#weatherContainer h1 {
+    margin: 5px;
+    font-size: 47px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#weatherDescriptionHeader {
+    font-size: 25px;
+    vertical-align: 120%;
+}
+
+#temperature {
+    font-size: 52px;
+    margin: 0;
+    padding-left: 85px;
+}
+
+#temperatureMax,
+#temperatureMin {
+    margin-left: 30px;
+    margin-top: 9px;
+    font-size: 18px;
+    color: #cff7cf;
+}
+
+#humidity,
+#windSpeed,
+#sunrise,
+#sunset {
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 31px;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#day1,
+#day2,
+#day3,
+#day4 {
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+#day5 {
+    font-size: 14px;
+    margin-left: 3px;
+    padding-left: 5px;
+}
+
+#iconImg1,
+#iconImg2,
+#iconImg3,
+#iconImg4,
+#iconImg5 {
+    width: 60px;
+    display: inline-block;
+}
+
+#temp1,
+#temp2,
+#temp3,
+#temp4,
+#temp5 {
+    margin-left: 15px;
+    font-size: 21px;
+}

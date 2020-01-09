@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>weather</title>
+
+    <link rel="stylesheet" href="stylesMob.css" />
+   <link rel="stylesheet" href="https://use.typekit.net/mrr0tuq.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/11f529b3af.js"></script>
+
+</head>
+
+<body>
+   
+    <div id="searchContainer">
+        <input class="searchControl" type="text" placeholder="city" id="searchInput" />
+        <button class="searchControl" id="searchBtn">search</button>
+    </div>
+   
+    <p id="text">Show me, </p>
+    <section id="text1">the weather</section>
+    <main id="text2">out there</main>
+   
+    <div id="weatherContainer">
+      <div id="weatherDescription">
+            <h1 id="cityHeader"></h1>
+            <div id="weatherMain">
+                <div id="icon"><img id="iconImg" /></div>
+
+                <div id="weatherDescriptionHeader"></div>
+                <h2 id="temperature"></h2>
+                <div>
+                    <div id="temperatureMax"></div>
+                    <div id="temperatureMin"></div>
+                </div>
+            </div>
+            <hr />
+
+           <div class="four">
+                <div class="two">
+                    <div id="windSpeed" class="bottomDetails"></div>
+                    <div id="humidity" class="bottomDetails"></div>
+                </div>
+                <div id="two">
+                    <div id="sunrise"></div>
+                    <div id="sunset"></div>
+                </div>
+            </div>
+           <hr id="hr"/>
+           
+            <div id="forecast">
+                <div>
+                    <div id="day1"></div>
+                    <img id="iconImg1" />
+                    <div id="temp1"></div>
+                </div>
+                <div>
+                    <div id="day2"></div>
+                    <img id="iconImg2" />
+                    <div id="temp2"></div>
+                </div>
+                <div>
+                    <div id="day3"></div>
+                    <img id="iconImg3" />
+                    <div id="temp3"></div>
+                </div>
+                <div>
+                    <div id="day4"></div>
+                    <img id="iconImg4" />
+                    <div id="temp4"></div>
+                </div>
+                <div>
+                    <div id="day5"></div>
+                    <img id="iconImg5" />
+                    <div id="temp5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/places.js@1.16.4"></script>
+    <script>
+        (function() {
+            var placesAutocomplete = places({
+                appId: "plSMD0XT00FY",
+                apiKey: "0c554552e3c39afcb702b745de48e6dd",
+                container: document.querySelector("#searchInput"),
+                templates: {
+                    value: function(suggestion) {
+                        return suggestion.name;
+                    }
+                }
+            }).configure({
+                type: "city",
+                aroundLatLngViaIP: false
+            });
+        })();
+    </script>
+</body>
+
+</html>
